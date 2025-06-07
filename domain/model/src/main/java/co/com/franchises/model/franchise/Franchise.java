@@ -1,19 +1,17 @@
 package co.com.franchises.model.franchise;
 import co.com.franchises.model.branch.Branch;
-import lombok.Builder;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder(toBuilder = true)
 public class Franchise {
 
-    private Long id;
+    private String id;
     private String name;
     private List<Branch> branches;
 

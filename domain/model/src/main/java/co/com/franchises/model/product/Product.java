@@ -1,18 +1,16 @@
 package co.com.franchises.model.product;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder(toBuilder = true)
 public class Product {
 
-    private Long id;
+    private String id;
     private String name;
-    private int stock;
+    private Integer stock;
 
 }
