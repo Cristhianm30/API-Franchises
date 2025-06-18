@@ -9,7 +9,10 @@ public interface FranchiseRepository {
 
     Mono<Franchise> save(Franchise franchise);
 
-    Mono<Void> deleteById(String id);
-
     Mono<Franchise> findByName(String name);
+
+    Mono<Franchise> findByBranchId(String branchId);
+
+    Mono<Franchise> findByProductsId(String productId);
+
 }

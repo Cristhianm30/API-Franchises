@@ -23,4 +23,17 @@ public class FranchiseRepositoryAdapter extends AdapterOperations<Franchise, Fra
         return repository.findByName(name)
                 .map(this::toEntity);
     }
+
+    @Override
+    public Mono<Franchise> findByBranchId(String branchId) {
+        return repository.findByBranchesId(branchId)
+                .map(this::toEntity);
+    }
+
+    @Override
+    public Mono<Franchise> findByProductsId(String productId) {
+        return repository.findByBranchesProductsId(productId)
+                .map(this::toEntity);
+    }
+
 }

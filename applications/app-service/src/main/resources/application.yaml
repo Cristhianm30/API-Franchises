@@ -13,7 +13,7 @@ spring:
     include: null
   data:
     mongodb:
-      uri: mongodb+srv://${MONGODB_USER}:${MONGODB_PASS}@${MONGODB_HOST}/${MONGODB_DB}?retryWrites=true&w=majority&appName=ApiFranchiseCluster
+      uri: mongodb://localhost:27017/Franchises
 management:
   endpoints:
     web:

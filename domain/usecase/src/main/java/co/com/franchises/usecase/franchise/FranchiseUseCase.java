@@ -3,7 +3,6 @@ package co.com.franchises.usecase.franchise;
 import co.com.franchises.model.franchise.Franchise;
 import co.com.franchises.model.franchise.gateways.FranchiseRepository;
 import lombok.RequiredArgsConstructor;
-import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.util.ArrayList;

@@ -8,4 +8,8 @@ import reactor.core.publisher.Mono;
 public interface FranchiseMongoRepository extends ReactiveMongoRepository<FranchiseDocument, String>, ReactiveQueryByExampleExecutor<FranchiseDocument> {
 
     Mono<FranchiseDocument> findByName(String name);
+
+    Mono<FranchiseDocument> findByBranchesId(String branchId);
+
+    Mono<FranchiseDocument> findByBranchesProductsId(String productId);
 }
